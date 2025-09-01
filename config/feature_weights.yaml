@@ -1,0 +1,10 @@
+feature_weights:
+  behavioral_signals: 0.1
+  content_analysis: 0.15
+  domain_reputation: 0.3
+  tld_risk: 0.25
+  url_structure: 0.2
+thresholds:
+  high_confidence_phishing: 0.8
+  likely_safe: 0.2
+  suspicious: 0.5

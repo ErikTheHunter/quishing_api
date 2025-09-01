@@ -1,0 +1,102 @@
+threat_intelligence:
+  phishing_indicators:
+    brand_impersonation:
+    - paypal
+    - amazon
+    - google
+    - microsoft
+    - apple
+    - facebook
+    - instagram
+    - netflix
+    - spotify
+    suspicious_keywords:
+    - login
+    - signin
+    - verify
+    - update
+    - secure
+    - account
+    - suspended
+    - confirm
+    - validate
+    - authentication
+    - payment
+    - billing
+    - urgent
+    - expire
+    - suspended
+  tld_categories:
+    commercial_reputable:
+      risk_score: 0.3
+      tlds:
+      - .com
+      - .org
+      - .net
+      trust_level: medium
+    education:
+      risk_score: 0.1
+      tlds:
+      - .edu
+      - .ac.uk
+      - .edu.au
+      - .ac.in
+      trust_level: high
+    free_domains:
+      risk_score: 0.9
+      tlds:
+      - .tk
+      - .ml
+      - .ga
+      - .cf
+      trust_level: very_low
+    geographic_concern:
+      risk_score: 0.6
+      tlds:
+      - .ru
+      - .cn
+      trust_level: medium_low
+    government:
+      risk_score: 0.05
+      tlds:
+      - .gov
+      - .mil
+      - .gov.uk
+      - .gouv.fr
+      - .gov.au
+      trust_level: very_high
+    suspicious_new:
+      risk_score: 0.75
+      tlds:
+      - .xyz
+      - .top
+      - .click
+      - .download
+      - .zip
+      trust_level: low
+  trusted_domains:
+    business:
+    - linkedin.com
+    - salesforce.com
+    - adobe.com
+    development:
+    - github.com
+    - stackoverflow.com
+    - gitlab.com
+    major_tech:
+    - google.com
+    - youtube.com
+    - microsoft.com
+    - apple.com
+    - amazon.com
+    - facebook.com
+    - instagram.com
+    - twitter.com
+    media_news:
+    - wikipedia.org
+    - bbc.com
+    - cnn.com
+    - reuters.com
+  update_settings:
+    cache_duration_hours: 6
+    threat_feed_update_frequency: daily
